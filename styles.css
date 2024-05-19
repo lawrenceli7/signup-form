@@ -2,8 +2,163 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Norse Bold", Arial, sans-serif;
 }
 
 body {
-  font-family: "Norse Bold", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.background-image {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+  width: 50%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.odin-text {
+  color: #ffffff;
+  font-size: 65px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+.form-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+label {
+  margin-bottom: 0.5em;
+  color: #717780;
+}
+
+input {
+  padding: 0.5em;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: green;
+  box-shadow: 0 0 5px rgba(44, 232, 6, 0.5);
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button {
+  background-color: #596d48;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 25%;
+  padding: 15px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #465c3b;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #f9fafb;
+}
+
+.text {
+  padding: 35px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.account {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.login {
+  color: #596d48;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
 }
